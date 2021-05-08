@@ -1,0 +1,571 @@
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 顶部样式*/
+.top{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: #f5f5f5;
+    color:#868686;
+}
+.top_left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 19px;
+    background: url('../img/icon-call.png') no-repeat 0 5px;
+}
+.top_right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.top_right_text{
+    margin-right: 19px;
+    color:#868686;
+}
+.top_right_logon{
+    margin-right: 19px;
+    color:#32a9e4;
+}
+.top_right_register{
+    color:#32a9e4;
+    margin-right: 30px;
+}
+.top_right_help{
+    color:#32a9e4;
+    margin-right: 55px;
+}
+/* 头部样式 */
+.head{
+    height: 100px;
+}
+.head_left{
+    width: 403px;
+    height: 74px;
+    padding-left: 72px;
+    font-size:30px;
+    font-weight: bold;
+    line-height:74px;
+    background: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi3.guaiguai.com%2Fstatic%2F2019%2F3%2F5db64e58c4e78.jpg&refer=http%3A%2F%2Fi3.guaiguai.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1623053785&t=96a06e3eba42d280061fb4550b995110') no-repeat 0 center;
+    background-size: 65px 65px;
+}
+.head-right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top:-19px;
+    width:326px;
+    height:38px;
+    background:url('../img/ui-search.jpg');
+}
+.head-right_message{
+    line-height: 38px;
+    margin-left: 4px;
+    color: #fff;
+    padding: 10px 23px 10px 10px;
+    cursor: pointer;
+}
+.head-right_input{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    top: 2px;
+    left: 70px;
+    border: none;
+    outline:none;
+    font-size: 16px;
+    color: #868686;
+}
+.head-right_btn{
+    position: absolute;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    cursor: pointer;
+}
+.head-right_list{
+    width: 70px;
+    height:78px;
+    box-shadow:3px 3px 4px rgb(155, 155, 155);
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    display: none;
+    cursor: default;
+}
+.head-right_list span{
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #afafaf;
+    font-size: 14px;
+}
+/* 列表样式 */
+.nav{
+    height: 36px;
+    background:#60bff2;
+}
+.nav a{
+    color: #fff;
+    font-size:16px;
+    padding-left:30px;
+    line-height:30px;
+}
+.nav a:nth-of-type(1){
+    padding-left: 220px;
+}
+.nav_list{
+    width: 190px;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+.nav_list_item{
+    height: 38.4px;
+    width: 190px;
+    font-size:14px;
+    color: #fff;
+    line-height: 38.4px;
+    /* position: relative; */
+    /* z-index: 3; */
+    background-color: #1fa4f1;
+}
+
+.nav_list_item_logo{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+    padding-bottom: 1px;
+    vertical-align:middle;
+    background:url('../img/icon-menu.jpg') no-repeat -22px 10px;
+}
+.nav_list_item_span{
+    line-height:38.4px ;
+}
+.nav_list_item span:nth-of-type(3){
+    font-size:12px;
+    position: absolute;
+    right: 4px;
+}
+.nav_list_information_item_top span{
+    cursor:pointer;
+}
+.nav_list_information_item{
+    width: 510px;
+    height: 363px;
+    background:#fff;
+    position: absolute;
+    top: 36px;
+    left: 190px;
+    z-index: 11;
+    box-shadow: 4px 4px 4px rgb(204, 204, 204);
+    background: url('../img/bg-menu.jpg');
+    padding: 30px;
+    display:none;
+}
+
+.nav_list_information_item_caption{
+    font-weight:bold;
+    color:#4c4948;
+    margin: 14px 0;
+}
+.nav_list_information_item_bottom span,.nav_list_information_item_top span{
+    font-size:12px;
+    color: #4c4948;
+}
+.nav_list_information_item_bottom{
+    margin-top: 30px;
+}
+.nav_list_caption {
+    height: 36px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    line-height: 35.16px;
+    background:#1fa4f1;
+}
+/* banner部分 */
+.banner{
+    width:802px;
+    height: 414px;
+    padding-left:198px;
+    margin:0 auto;
+    position: relative;
+    z-index: 1;
+
+}
+.banner_wrap{
+    margin: 8px 8px 10px 0;
+    width: 544px;
+    height: 414px;
+    overflow: hidden;
+}
+.banner_img{
+    width: 9999px;
+    /* height: 415px; */
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+.banner_img a{
+    width: 544px;
+    height: 414px;
+    float: left;
+    display: block;
+}
+.banner_img a img{
+    width: 100%;
+    height: 100%;
+    
+}
+.banner_img_btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    height: 40px;
+    width: 544px;
+}
+.banner_img_btn_pre{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url('../img/ui-slider-arrow.png');
+    float:left;
+}
+.banner_img_btn_next{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url('../img/ui-slider-arrow.png') 40px 0;
+    float:right;
+}
+.banner_img_tip{
+    width: 544px;
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+.banner_img_tip span{
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:5px;
+    background: rgb(201, 201, 201);
+    transition: 0.5s;
+}
+.banner_search{
+    width: 250px;
+    height: 414px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* banner部分快速预约 */
+.banner_search_top{
+    height:256px;
+    background:#fafafa;
+    text-align: center;
+}
+.banner_search_top_caption{
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    color:#fecd09;
+    padding-left: 24px;
+    background:url(../img/icon-help.png) no-repeat 0 2px;
+    margin-top: 15px;
+}
+.banner_search_top_select{
+    display: block;
+    width:170px;
+    height:25px;
+    border-radius:4px;
+    margin:10px auto 0;
+    
+}
+.banner_search_top_select:nth-of-type(1){
+    margin-top:13px;
+}
+.banner_search_top_btn{
+    width: 108px;
+    height:32px;
+    background:#fecd09;
+    margin: 16px auto 0;
+    border-radius:4px;
+    border:none;
+    cursor:pointer;
+}
+.banner_search_top_btn:hover{
+    background:#e0b400;
+}
+/* banner部分帮助中心 */
+.banner_search_bottom{
+    height: 129px;
+    background:#fafafa;
+    margin-top:12px;
+    text-align: center;
+    padding-top: 17px;
+}
+.banner_search_bottom_caption{
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    color:#02b4ea;
+    padding-left: 24px;
+    background:url(../img/icon-help.png) no-repeat 78px -22px;
+}
+.banner_search_bottom_item{
+    display: inline-block;
+    width: 86px;
+    height:26px;
+    color:#02b4ea;
+    line-height:26px;
+    margin-top: 18px;
+}
+/* tab样式 */
+.tab{
+    margin-top: 10px;
+}
+.tab_left{
+    width: 742px;
+}
+.tab_left_leval1{
+    height: 34px;
+    background:#fafafa;
+}
+.tab_left_leval1_item{
+    display: inline-block;
+    width: 112px;
+    height: 34px;
+    line-height:34px;
+    text-align: center;
+    cursor:pointer;
+    color:#02b4ea;
+}
+.tab_left_leval2{
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    padding: 7px 14px;
+    font-size:14px;
+    color:#4c4948;
+}
+.tab_left_wrap:nth-of-type(3){
+    display: none;
+}
+.tab_left_leval2_item{
+    padding: 3px 10px;
+    cursor:pointer;
+}
+.tab_left_hospital{
+    width: 716px;
+    height: 415px;
+    border: 1px solid #d3d3d3;
+    padding: 0 12px 12px 12px;
+}
+.tab_left_hospital img{
+    width: 110px;
+    height:98px;
+}
+.tab_left_hospital_item{
+    width: 352px;
+    position: relative;
+    float:left;
+    margin-top: 20px;
+}
+.tab_left_hospital:nth-of-type(2),.tab_left_hospital:nth-of-type(3){
+    display:none;
+}
+.tab_left_hospital_item_text{
+    position:absolute;
+    top:8px;
+    left: 115px;
+}
+.tab_left_hospital_item_text span{
+    font-size: 10px;
+    color:#4c4948;
+    display:inline-block;
+}
+.tab_left_hospital_item_text .tab_left_hospital_item_cpation{
+    font-size: 14px;
+    color:#02b4ea;
+}
+.tab_left_hospital_message{
+    border-bottom: 1px dashed #d3d3d3;
+    /* float: left; */
+    font-size: 12px;
+    display: inline-block;
+    width: 335px;
+    line-height: 24px;
+    margin-right: 15px;
+    margin-top: 15px;
+    color:#4c4948;
+    position: relative;
+}
+.tab_left_hospital_bottom{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    color:#02b4ea;
+}
+/* tab右侧部分样式 */
+.tab_right{
+    position: absolute;
+    top: 0;
+    left: 750px;
+    width: 252px;
+}
+.tab_right_message,.tab_right_stop{
+    border: 1px solid #d3d3d3;
+    height: 240px;
+}
+.tab_right_message_caption,.tab_right_stop_caption{
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    background:#f4f6fa;
+    padding-left: 14px;
+    color:#fec009;
+    position: relative;
+}
+.tab_right_message div,.tab_right_stop div{
+    margin-top:13px ;
+    padding-left:41px;
+    height: 202px;
+}
+.tab_right_message div{
+    background:url('../img/list-yellow.jpg') no-repeat 15px 2px;
+}
+.tab_right_message_item,.tab_right_stop_item{
+    font-size: 11px;
+    display: block;
+    margin-top: 13.5px;
+    color:#979797;
+}
+.tab_right_stop{
+    margin-top: 10px;
+}
+.tab_right_stop_caption{
+    color:#4ab4ef;
+}
+.tab_right_stop div{
+    background:url('../img/list-blue.jpg') no-repeat 15px 2px;
+}
+.footer{
+    height: 70px;
+    background: #bdbdbe;
+}
+.footer_text{
+    text-align: center;
+    color: #979797;
+    font-size: 12px;
+    padding-top:25px
+}
+.returntop{
+    width: 40px;
+    height: 40px;
+    background:url('../img/icon-go-up.png') rgb(150, 150, 150) no-repeat center;
+    position: fixed;
+    right: 0;
+    bottom:100px;
+}
+
+
+
+
+
+
+
+
+.focus{
+    color:#fff;
+    background:#60bff2;
+}
+.banner_img_tip .banner_img_tip_focus{
+    background: #60bff2;
+    width: 14px;
+    height: 14px;
+    border-radius:7px;
+}
+.banner_img ::after{
+    content: '';
+    display:block;
+    clear:both;
+}
+.banner_img_tip span:hover{
+    background: #60bff2;
+    width: 14px;
+    height: 14px;
+    border-radius:7px;
+}
+.tab_left_hospital::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+.tab_left_hospital_item_cpation::after{
+    content:'【三级甲等】';
+    position: absolute;
+    right: 10px;
+    color: #979797;
+    font-size: 12px;
+}
+.tab_left_hospital_message::after{
+    content:'【三级甲等】';
+    position: absolute;
+    right:0;
+    color: #979797;
+}
+.tab_right_message_caption::after,.tab_right_stop_caption::after{
+    content:'|更多';
+    color:#979797;
+    position: absolute;
+    line-height: 38px;
+    top: 0;
+    right: 10px;
+    font-size:14px;
+}
+.head-right_list span:hover{
+    background: #e6e6e6;
+}
+.nav_list_information_item_bottom span::after,.nav_list_information_item_top span::after{
+    content:'|';
+    padding:0 12px;
+    color:#d1d1d1;
+}
+.nav_list_item:hover{
+    background-color: #fff;
+}
+.nav_list_item:hover .nav_list_information_item{
+    display: block;
+}
+.nav_list_item:hover span:nth-of-type(2){
+    color:#000;
+}
+.nav_list_item:hover span:nth-of-type(3){
+    color:rgb(146, 146, 146);
+}
+.nav_list_item:hover .nav_list_item_logo{
+    background-position-x:0 ; 
+}
+.returntop:hover::after{
+    background-color: rgb(150, 150, 150);
+    display: block;
+    content: '回到顶部';
+    text-align: center;
+    color: #fff;
+}
+
+
+
